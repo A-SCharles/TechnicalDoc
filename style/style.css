@@ -1,0 +1,111 @@
+/* 15. media query */
+body {
+    font-family: Arial;
+    font-size: 0.9em;
+    line-height: 1.2;
+    background-color: #e2e2e2;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #f8eeec;
+    border-right: solid cyan;
+  }
+  
+  #navbar header {
+    text-align: center;
+    font-family: times-new-roman;
+    border: 2px solid cyan;
+    padding: 20px;
+    text-decoration: underline;
+  }
+  
+  #navbar a {
+    font-family: times-new-roman;
+    display: block;
+    padding: 10px;
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    color: cyan;
+  }
+  
+  .nav-link {
+    border-top: 2px solid cyan;
+    border-bottom: 2px solid cyan;
+    padding: 20px;
+  }
+  
+  #main-doc {
+    width: 70%;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-left: 300px;
+  }
+  
+  .main-section {
+    padding-top: 10px;
+    border-bottom: 2px solid cyan;
+  }
+  
+  .main-section a {
+    color: black;
+  }
+  
+  .main-section a:hover {
+    color: cyan;
+  }
+  
+  ul li {
+    padding: 10px;
+  }
+  
+  header {
+    font-size: 2em;
+    font-family: times-new-roman;
+    text-decoration: none;
+    line-height: 1.3em;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    #navbar {
+      background: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 300px;
+      border: none;
+      z-index: 1;
+      border-bottom: 1px solid;
+    }
+  
+    #navbar a {
+      display: block;
+      font-size: 1.3em;
+      line-height: 1;
+      color: black;
+    }
+  
+    #main-doc {
+      position: relative;
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 350px;
+    }
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
